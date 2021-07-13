@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { FC, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import styles from "./App.module.css";
 
-const App: React.FC<{ initial?: number }> = ({ initial = 0 }) => {
+const App: FC<{ initial?: number }> = ({ initial = 0 }) => {
   const [count, setCount] = useState(initial);
 
   return (
